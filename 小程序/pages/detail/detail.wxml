@@ -1,0 +1,41 @@
+<view class='top'>
+    <view  class="select" hover-class='selecthover' bindtap='showSelect' data-showflag="{{showselect}}">筛选</view>
+    <view class='search' hover-class='selecthover' bindlongtap=''>| 搜索</view>
+  </view>
+  <!--筛选模块 -->
+  <view class='selectblock' wx:if="{{showselect}}" style=''>
+    <view class='selectposition'>
+    <view class='sel-label'>地点\n</view>
+      <view class='selposition'data-position="北苑一楼" data-num="0" style="background:{{backgroundcolor[0].background}};color:{{backgroundcolor[0].color}}" bindtap='isselect'>北苑一楼</view>
+      <view class='selposition' data-num="1" style="background:{{backgroundcolor[1].background}};color:{{backgroundcolor[1].color}}" bindtap='isselect'>北苑二楼</view>
+      <view class='selposition' data-num="2" style="background:{{backgroundcolor[2].background}};color:{{backgroundcolor[2].color}}" bindtap='isselect'>北苑三楼</view>
+      <view class='selposition' data-num="3" style="background:{{backgroundcolor[3].background}};color:{{backgroundcolor[3].color}}" bindtap='isselect'>南苑面包房</view>
+      <view class='selposition' data-num="4" style="background:{{backgroundcolor[4].background}};color:{{backgroundcolor[4].color}}" bindtap='isselect'>校医室</view>
+      <view class='selposition' data-num="5" style="background:{{backgroundcolor[5].background}};color:{{backgroundcolor[5].color}}" bindtap='isselect'>电教上机</view>
+      <view class='selposition' data-num="6" style="background:{{backgroundcolor[6].background}};color:{{backgroundcolor[6].color}}" bindtap='isselect'>南苑二楼</view>
+      <view class='selposition' data-num="7" style="background:{{backgroundcolor[7].background}};color:{{backgroundcolor[7].color}}" bindtap='isselect'>南苑三楼</view>
+      <view class='selposition' data-num="8" style="background:{{backgroundcolor[8].background}};color:{{backgroundcolor[8].color}}" bindtap='isselect'>南苑三楼</view>
+    </view>
+    <view class='selectclass'>
+    <view class='sel-label'>分类</view>
+      <view class='selposition'>消费</view>
+      <view class='selposition'>饭卡充值</view>
+      <view class='selposition'>电费充值</view>
+      <view class='selposition'>补助</view>
+    </view>
+    <view class='cancel-button' bindtap='showSelect'>取消</view>
+    <view class='cancel-button submit-button'>提交</view>
+    <view class="end" bindtap='showSelect'></view>
+  </view>
+<scroll-view scroll-y bindscrolltolower='downGetMore' bindscrolltoupper='' class='detail' style="height:{{windowHeight}}px" lower-threshold="0" enable-back-to-top="true">
+    <view class="record" wx:for="{{detail}}" wx:key="unique"  data-data="{{item}}" hover-class='recordhover'>
+      <image src="/pages/images/logo11.png" class='image'></image>
+      <view class='position'>{{item.place}}</view>
+      <view class='time'>{{item.time}}</view>
+      <view class='money'>{{item.price}}</view>
+    </view>
+    <view class="tips">
+      <view wx:if="{{hasmore}}"><icon type="waiting" size="20"/><text>{{tip}}</text></view>
+      <view wx:else><text>没有更多内容了</text></view>
+    </view>
+</scroll-view>

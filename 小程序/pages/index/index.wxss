@@ -1,0 +1,222 @@
+page{
+  background: #f1f1f1;
+  color: #333;
+}
+.blueback{
+  width: 100%;
+  height: 250rpx;
+  background:#69ABE8;
+}
+.top-label{
+  font-size:24rpx;
+  font-weight:800;
+  text-align:center;
+  color:#fff;
+  padding-top:10rpx; 
+}
+.money-block{
+  width: 90%;
+  height: 460rpx;
+  background: #fff;
+  margin:30rpx auto 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 6px 8px #e3e3e3;
+}
+.balance{
+  margin:0 auto 0 auto;
+  width:500rpx;
+  text-align: center;
+  padding-top:30rpx;
+}
+.money{
+  font-size: 80rpx;
+}
+.lastTime{
+  font-size: 20rpx;
+}
+.card-data{
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.label{
+  margin-left: 20rpx;
+}
+.button{
+  margin:40rpx auto 0 auto; 
+  text-align: center;
+}
+.button image{
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 0px;
+}
+.gs-jg{
+ display: inline-block;
+ margin-left: 100rpx;
+}
+.skcz{
+  display: inline-block;
+}
+.xykcz{
+  display: inline-block;
+  margin-left: 100rpx;
+}
+.button-label{
+  font-size: 24rpx;
+  line-height: 1;
+}
+.mx-fx-view{
+  position: relative;
+  top: 300rpx;
+}
+/* 消费明细、账单分析按钮 */
+.balance-consumption {
+    display: flex;
+    margin: 0 45rpx 10rpx;
+    border-radius: 5px;
+    box-shadow: 0 0 10rpx #ddd;
+    overflow: hidden;
+}
+.balance-consumption text {
+    flex: 1;
+    flex-shrink: 0;
+    line-height: 150%;
+    font-size: 10pt;
+    padding: 12rpx 0;
+    font-weight: bold;
+    text-align: center;
+    background: #fff;
+}
+.balance-consumption .current-btn {
+    color: #fff;
+    background: #ffcb63;
+}
+
+.grid-wraper{
+position:relative;
+top: 400rpx;
+}
+/* 详情盒子 */
+.detail-remind {
+    font-size: 9pt;
+    line-height: 100%;
+    color: #aaa;
+    text-align: center;
+    margin: 30rpx 5rpx;
+}
+.ykt-detail-wraper {
+    display: flex;
+    flex-direction: column;
+    margin: 30rpx 30rpx 30rpx;
+    background: #fff;
+    border-radius: 3px;
+	  width:700rpx;
+}
+.ykt-detail {
+    display: flex;
+    flex-direction: column;   
+    padding: 0 10rpx;
+    overflow: hidden;
+}
+.ykt-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120rpx;
+}
+.ykt-type-name {
+    font-size: 11pt;
+}
+.detail-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 35rpx 10rpx;
+}
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25rpx 5rpx 20rpx;
+    border-top: 1px solid #eee;
+}
+.detail-item-label {
+    color: #888;
+    width: 60pt;
+}
+.detail-item-value {
+    flex: 1;
+}
+
+.read-more{
+  font-size: 24rpx;
+  font-weight: 700;
+  color: #69ABE8;
+  text-decoration:underline;
+  text-align: center;
+  height: 50rpx;
+  margin-top:60rpx;
+}
+/* .container{
+  position:relative;
+  height:500rpx;
+  width: 700rpx;
+  top:20rpx;
+} */
+/*没有绑定时的样式*/
+.nobinding image{
+  width: 64rpx;
+  height: 64rpx;
+  position: relative;
+  top: 90rpx;
+  left: 140rpx;
+}
+.nobinding{
+  font-size: 28rpx;
+}
+.binding-label{
+  display: inline-block;
+  position: relative;
+  top: 100rpx;
+  left: 150rpx;
+}
+.nobindingbutton{
+  margin-top:180rpx; 
+}
+.tobinding{
+  font-size: 30rpx;
+  font-weight: 700;
+  color:#69ABE8;
+  text-decoration:underline;
+}
+.nomore{
+  width: 400rpx;
+  text-align: center;
+  margin:  50rpx auto;
+  font-size: 28rpx;
+  color: #707070;
+  font-weight: 700;
+  position:relative;
+  top: 300rpx;
+}
+.nomore image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.canvas {
+    width: 90%;
+    height: 250px;
+}
+.analyse-tips{
+  font-size: 28rpx;
+  text-align: center;
+  color: #f99c9c;
+  margin-bottom:20rpx;
+}
+.canvas-title{
+  font-size: 32rpx;
+  color: #659be0;
+  font-weight: 600;
+  margin:10rpx 0 10rpx 20rpx;
+}

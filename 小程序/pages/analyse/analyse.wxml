@@ -1,0 +1,4 @@
+<view class='top'>
+    <view  class="time" hover-class='' bindtap=''>{{analysetime}}</view>
+    <image src="/pages/images/date.png"></image>
+  </view>

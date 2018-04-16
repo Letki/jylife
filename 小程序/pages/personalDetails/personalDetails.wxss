@@ -1,0 +1,116 @@
+/* pages/personalDetails/personalDetails.wxss */
+page{
+  background: #f1f1f1;
+  color: #333;
+}
+.top-label{
+  height:250rpx;
+  background-color:#69ABE8;
+}
+.personal-details{
+  width:95%;
+  height:250rpx;
+  background-color:#fff;
+  position: absolute;
+  top:100rpx;
+  left:20rpx;
+  box-shadow:darkgray 5px 5px 30px 5px;
+  border-radius: 10rpx;
+}
+.headPortrait{
+  width:150rpx;
+  height:150rpx;
+  border-radius: 150rpx;
+  position: absolute;
+  top:-70rpx;
+  left:280rpx;
+}
+.name{
+  position: absolute;
+  top:85rpx;
+  left:325rpx;
+  font-size: 28rpx;
+}
+.tip-binding{
+  position: absolute;
+  left:220rpx;
+  font-size: 25rpx;
+  top:145rpx;
+}
+.tip-binding:hover{
+color:#6c0;
+}
+.feedback{
+  height:100rpx;
+  background-color:#fff;
+  width:100%;
+  border-top:#bfbfbf solid 2rpx;
+  border-bottom:#bfbfbf solid 2rpx;
+  position: absolute;
+  top:390rpx;
+}
+.about-us{
+  height:100rpx;
+  background-color:#fff;
+  width:100%;
+  border-top:#bfbfbf solid 2rpx;
+  border-bottom:#bfbfbf solid 2rpx;
+  position: absolute;
+  top:500rpx;
+}
+.image-feedback{
+  width:50rpx;
+  height:50rpx;
+  position: absolute;
+  left:40rpx;
+  top:20rpx;
+}
+.image-about-us{
+  width:45rpx;
+  height:45rpx;
+  position: absolute;
+  left:40rpx;
+  top:25rpx;
+}
+.feedback-text{
+  color:darkgray;
+  position: absolute;
+  left:110rpx;
+  top:23rpx;
+  font-size:35rpx;
+}
+.about-us-text{
+  color:darkgray;
+  position: absolute;
+  left:110rpx;
+  top:25rpx;
+  font-size:35rpx;
+}
+.text{
+  color:#252525;
+  position: absolute;
+  right:30rpx;
+  top:20rpx;
+}
+.userDetail{
+  position:relative;
+  top:140rpx;
+  margin-left:15rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.studentId{
+  text-align:center;
+  width:250rpx;
+  display:inline-block;
+}
+.classroom{
+  width:200rpx;
+  display:inline-block;
+  text-align:center;
+}
+.changeBinding{
+  position: relative;
+  top: 780rpx;
+  padding:10rpx;
+}

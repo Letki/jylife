@@ -1,0 +1,170 @@
+page{
+  background: #f1f1f1;
+  color: #333;
+}
+.backing{
+  width:100%;
+  background-color:#69ABE8;
+  height:300rpx;
+}
+.top-label{
+  background-color: #69ABE8;
+  text-align: center;
+  color:#fff;
+  font-size: 20rpx;
+}
+.announce{
+  width: 90%;
+  height: 900rpx;
+  background:#FFF;
+  position: absolute;
+  top:105rpx;
+  left:38rpx;
+  box-shadow:darkgray 5px 5px 30px 5px;
+  border-radius: 15rpx;
+}
+.little-hero{
+  background-color:#69ABE8;
+  position: absolute;
+  top:40rpx;
+  left:215rpx;
+}
+.hero-1{
+  width:65rpx;
+  height:65rpx;
+}
+.hero-2{
+  width:65rpx;
+  height:65rpx;
+}
+.hero-3{
+  width:65rpx;
+  height:65rpx;
+}
+.hero-4{
+  width:65rpx;
+  height:65rpx;
+}
+.hero-5{
+  width:65rpx;
+  height:65rpx;
+}
+.card-owner{
+  border-bottom: #ddd solid 3rpx;
+  width:85%;
+  margin:0 auto;
+  font-size: 30rpx;
+  color:#666;
+  font-weight: bold;
+  height:60rpx;
+  padding-top:40rpx;
+  padding-left:50rpx;
+}
+.card-owner-text{
+  width:550rpx;
+  font-size: 25rpx;
+  position: absolute;
+  left:200rpx;
+  top:33rpx;
+}
+.student-number{
+  border-bottom: #ddd solid 3rpx;
+  width:85%;
+  margin:0 auto;
+  font-size: 30rpx;
+  color:#666;
+  font-weight: bold;
+  height:60rpx;
+  padding-top:40rpx;
+  padding-left:50rpx;
+}
+.student-number-text{
+  width:550rpx;
+  font-size: 25rpx;
+  position: absolute;
+  left:200rpx;
+  top:133rpx;
+}
+.department{
+  border-bottom: #ddd solid 3rpx;
+  width:85%;
+  margin:0 auto;
+  font-size: 30rpx;
+  color:#666;
+  font-weight: bold;
+  height:60rpx;
+  padding-top:40rpx;
+  padding-left:50rpx;  
+}
+.department-text{
+  width:550rpx;
+  font-size: 25rpx;
+  position: absolute;
+  left:200rpx;
+  top:233rpx; 
+}
+.remark{
+  border-bottom: #ddd solid 3rpx;
+  width:85%;
+  margin:0 auto;
+  font-size: 30rpx;
+  color:#666;
+  font-weight: bold;
+  height:180rpx;
+  padding-top:40rpx;
+  padding-left:50rpx;  
+}
+.remark-text{
+  height:170rpx;
+  width:450rpx;
+  font-size: 25rpx;
+  position: absolute;
+  left:200rpx;
+  top:333rpx; 
+  padding-top:20rpx;
+}
+.type{
+  border-bottom: #ddd solid 3rpx;
+  width:85%;
+  margin:0 auto;
+  font-size: 30rpx;
+  color:#666;
+  font-weight: bold;
+  height:60rpx;
+  padding-top:40rpx;
+  padding-left:50rpx;  
+}
+.type-pick{
+  border-bottom: #ddd solid 3rpx;
+  width:85%;
+  margin:0 auto;
+  font-size: 25rpx;
+  color:#666;
+  height:60rpx;
+  padding-top:40rpx;
+  padding-left:70rpx;  
+}
+.type-pick:hover{
+   color:#6c0;  
+}
+.type-lose{
+  border-bottom: #ddd solid 3rpx;
+  margin:0 auto;
+  font-size: 25rpx;
+  width:85%;
+  color:#666;
+  height:60rpx;
+  padding-top:40rpx;
+  padding-left:70rpx;     
+}
+.type-lose:hover{
+    color:#6c0;  
+}
+.button{
+margin-top:720rpx;
+border-radius: 120rpx;
+width:95%;
+background-color:#69ABE8;
+color:#fff;
+box-shadow:darkgray 5px 5px 30px 5px;
+}

@@ -1,0 +1,119 @@
+page{
+  background: #f1f1f1;
+  color: #333;
+}
+.blueback{
+  width: 100%;
+  height: 300rpx;
+  background:#69ABE8;
+}
+.top-label{
+  font-size:24rpx;
+  font-weight:800;
+  text-align:center;
+  color:#fff;
+  padding-top:10rpx; 
+}
+
+.button image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.button{
+  text-align: center;
+  font-size: 28rpx;
+  margin-top: 55rpx;
+  color: #e3e3e3;
+}
+.add-button,.found-button{
+  display: inline-block;
+  margin-left: 180rpx; 
+}
+.add-button{
+  margin-left: 0
+}
+/* 切换按钮*/
+.balance-consumption {
+    display: flex;
+    margin: 0 45rpx 10rpx;
+    border-radius: 5px;
+    box-shadow: 0 0 10rpx #ddd;
+    overflow: hidden;
+    position: relative;
+    top: -20rpx;
+}
+.balance-consumption text {
+    flex: 1;
+    flex-shrink: 0;
+    line-height: 150%;
+    font-size: 10pt;
+    padding: 12rpx 0;
+    font-weight: bold;
+    text-align: center;
+    background: #fff;
+}
+.balance-consumption .current-btn {
+    color: #fff;
+    background: #ffcb63;
+}
+
+.grid-wraper{
+position:relative;
+top: 400rpx;
+}
+.tips-block{
+  margin-left:65rpx;
+  margin-top:-30rpx;
+}
+.found-detail image{
+  width: 28rpx;
+  height: 28rpx;
+  vertical-align: middle;
+}
+.tips{
+  font-size: 24rpx;
+  color: #8a8a8a;
+  vertical-align: middle;
+}
+
+/* 每条寻卡信息样式*/
+.record-block{
+  margin-top: 30rpx;
+}
+.record{
+  background-color: #fff;
+  border-radius: 5px;
+  width: 98%;
+  height: 150rpx;
+  margin: 10rpx auto 0 auto;
+}
+.record image{
+  width: 90rpx;
+  height: 90rpx;
+  position:relative;
+  left:20rpx;
+  top:30rpx;
+}
+.cardId{
+  position:relative;
+  left:50rpx;
+  font-size:48rpx;
+  top:10rpx;
+}
+.time{
+  position:relative;
+  font-size:28rpx;
+  color: #858585;
+  left: 150rpx;
+  top: -10rpx;
+}
+.showMore{
+  font-size: 30rpx;
+  color: #858585;
+    position:relative;
+    left: 450rpx;
+    top: -50rpx
+}
+.recordhover{
+  background-color: #f5f5f5;
+}

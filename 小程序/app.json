@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/analyse/analyse",
+    "pages/foundCard/foundCard",
+    "pages/announce/announce",
+    "pages/personalDetails/personalDetails",
+    "pages/gsjg/gsjg"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#69ABE8",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#69ABE8",
+    "navigationBarTitleText": "广金校园卡",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#69ABE8",
+    "list": [
+      {
+        "selectedIconPath": "pages/images/bar-index-selected.png",
+        "iconPath": "pages/images/bar-index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pages/images/bar-found-selected.png",
+        "iconPath": "pages/images/bar-found.png",
+        "pagePath": "pages/foundCard/foundCard",
+        "text": "找饭卡"
+      },
+      {
+        "selectedIconPath": "pages/images/bar-user-selected.png",
+        "iconPath": "pages/images/bar-user.png",
+        "pagePath": "pages/personalDetails/personalDetails",
+        "text": "我"
+      }
+    ]
+  }
+}

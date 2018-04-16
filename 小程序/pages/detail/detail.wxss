@@ -1,0 +1,128 @@
+page{
+    background-color: #e3e3e3;
+}
+.top{
+  background-color: #eee;
+  width: 100%;
+  height: 68rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.select{
+  float:left;
+  margin: 15rpx 0 0 20rpx;
+}
+.search{
+  float: right;
+  margin: 15rpx 20rpx 0 0;
+}
+.record{
+  background-color: #fff;
+  border-radius: 5px;
+  width: 98%;
+  height: 150rpx;
+  margin: 10rpx auto 0 auto;
+}
+.image{
+  width: 90rpx;
+  height: 90rpx;
+  position:relative;
+  left:20rpx;
+  top:30rpx;
+}
+.position{
+  position:relative;
+  left:130rpx;
+  font-size:40rpx;
+  bottom:80rpx;
+}
+.time{
+  position:relative;
+  bottom:60rpx;
+  left:130rpx;
+  font-size:28rpx;
+  color: #858585;
+}
+.money{
+  font-size:50rpx;
+  font-weight:500;
+  position:relative;
+  left:580rpx;
+  bottom:150rpx;
+  color: #333;
+}
+.recordhover{
+  background-color: #f5f5f5;
+}
+.selecthover{
+  color: #858585;
+}
+.addmoney{
+  font-size:60rpx;
+  font-weight:500;
+  position:relative;
+  left:190rpx;
+  top:10rpx;
+  color: #eaa770;
+}
+.addtime{
+  position:relative;
+  top:25rpx;
+  font-size:12px;
+  right:52px;
+  color: #858585;
+}
+.selectblock{
+  width: 100%;
+  height: 720rpx;
+  background-color: #eee;
+  color: #333;
+  position: absolute;
+  top: 68rpx;
+  border-top:1.5px solid #ccc;
+  z-index:99;
+}
+.selposition{
+  background: #d3d3d3;
+  width:200rpx;
+  height:75rpx;
+  font-size:16px;
+  display: inline-block;
+  margin:10px 5px 5px 18px;
+  text-align:center;
+  line-height:2.4;
+}
+.sel-label{
+  margin: 10px 0 0 10px;
+  font-weight: 600;
+}
+.cancel-button{
+  width:50%;
+  float:left;
+  height: 100rpx;
+  margin-top: 20px;
+  background: #caecfa;
+  color: #4dbef2;
+  text-align: center;
+  font-size: 24px;
+  line-height: 2;
+}
+.submit-button{
+  float: right;
+  background: #2d6dff;
+  color: #fff;
+}
+.end{
+  width: 100%;
+  height: 500rpx;
+  z-index: 22;
+  background: #fff;
+  margin-top:75px;
+  opacity:0.5;
+}
+.tips{
+  width:500rpx;
+  text-align:center;
+  margin:20rpx auto 50rpx auto;
+  padding-bottom: 100rpx;
+}

@@ -1,0 +1,33 @@
+<view class='blueback'>
+  <view class="top-label">#拾金不昧是中华民族的传统美德#</view>
+  <view class='button'>
+    <view class='add-button' bindtap='toannounce'>
+        <image src='/pages/images/add.png'></image>
+        <view>发布寻卡/失卡信息</view>
+    </view>
+    <view class='found-button'>
+        <image src='/pages/images/fou.png'></image>
+        <view>搜索</view>
+    </view>
+  </view>
+</view>
+<view class='found-detail'>
+  <view class="balance-consumption" bindtap='changeBlock'>
+            <text class="{{switchBtn ? 'current-btn' : ''}}" id="get" >拾卡</text>
+            <text class="{{switchBtn ? '' : 'current-btn'}}" id="throw">失卡</text>
+  </view>
+  <view class='tips-block'>
+    <image src='/pages/images/tip.png'></image> 
+    <text class='tips'>提示：拾卡是指他人捡到饭卡后,发布寻找卡主人的信息\n　　　　失卡是指卡主丢失饭卡后,发布寻卡的信息</text>
+  </view>
+  <view class='record-block' style="display:{{switchBtn ? '' : 'none'}}">
+    <!--找信息Demo-->
+    <view class="record" wx:for="{{5}}" hover-class='recordhover'>
+        <image src="/pages/images/logo12.png"></image>
+        <text class='cardId'>161543333</text>
+        <text class='time'>\n今天12:05</text>
+        <text class='showMore'>查看详情</text>
+      </view>
+  </view>
+
+</view>

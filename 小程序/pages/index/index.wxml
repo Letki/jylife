@@ -1,0 +1,101 @@
+<view class='blueback'>
+  <view class="top-label">#谁知盘中餐 粒粒皆辛苦#</view>
+  <view class="money-block">
+    <view class='balance'wx:if="{{binding}}">
+      <text class="money-label">余额: ￥</text>
+      <text class='money'>{{balance}}\n</text>
+      <text class='lastTime'>(最后更新时间 {{lasttime}})</text>
+    </view>
+    <view class='card-data'wx:if="{{binding}}">
+      <text class='label' style='margin-left:0'>账号：</text>
+      <text>{{CardId}}</text>
+      <text class='label'>持卡人：</text>
+      <text>{{CardUserName}}</text>
+      <text class='label'>卡状态：</text>
+      <text>{{CardStatus}}</text>
+    </view>
+    <!--未绑定渲染的部分-->
+    <view class="nobinding" bindtap='tobinding' wx:else>
+      <image src='/pages/images/sad.png'></image>
+        <text class='binding-label'>您还未绑定校园卡\n没有绑定将无法享受我们的服务<text class='tobinding' >\n点击前往绑定</text></text>
+        
+        <!-- <view class='binding-label'></view>
+        <view class='binding-label'>\n点击前往绑定</view> -->
+    </view>
+    <view class='button {{binding ?"button": "nobindingbutton"}}'>
+      <view class='skcz' bindtap='toskcz'>
+        <image src="{{skczicon}}"></image>
+        <view class="button-label">水控充值</view>
+      </view>
+      <view class='gs-jg' bindtap='togsjg'>
+        <image src="{{gsjgicon}}"></image>
+        <view class="button-label">卡挂失/解挂</view>
+      </view>
+      <view class='xykcz' bindtap='toxykcz'>
+        <image src="{{xykczicon}}"></image>
+        <view class="button-label">校园卡充值</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='mx-fx-view' hidden="{{!binding}}">
+  <view class="balance-consumption" bindtap='changeBlock'>
+    <text class="{{switchBtn ? 'current-btn' : ''}}" id="detail" data-flag="0">消费明细</text>
+    <text class="{{switchBtn ? '' : 'current-btn'}}" id="analyse" data-flag="1">账单分析</text>
+  </view>
+  <!--折线图-->
+  <view class='container' >
+  <text class='canvas-title'wx:if='{{!switchBtn}}'>月消费趋势</text>
+    <canvas canvas-id="lineCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+    <text class='canvas-title' wx:if='{{!switchBtn}}'>消费分布</text>
+    <canvas canvas-id="pieCanvas" class="canvas" bindtouchstart="" hidden='{{switchBtn}}' style="height:330px;margin-left:20rpx"></canvas>
+    <text class='canvas-title' wx:if='{{!switchBtn}}'>温馨提示</text>
+  </view>
+  <!--温馨提示-->
+  <view class='analyse-tips'wx:if='{{!switchBtn}}'>
+  <text>这个月里早餐时间较少喔\n老铁早餐还是得吃呀</text>
+  </view>
+
+  <view id='charBlock' style="display:{{charDisplay}}">
+    <!-- 明细图表 -->
+
+    <view class="detail-remind">点击上图查看对应交易详情</view>
+    <view class="ykt-detail-wraper">
+      <view class="ykt-head">
+        <text class="ykt-type-name">交易详情</text>
+      </view>
+      <view class="detail-list">
+        <view class="detail-item">
+          <text class="detail-item-label">交易时间</text>
+          <text class="detail-item-value">{{tapDetail.time}}</text>
+        </view>
+        <view class="detail-item">
+          <text class="detail-item-label">交易类型</text>
+          <text class="detail-item-value">{{tapDetail.transaction}}</text>
+        </view>
+        <view class="detail-item">
+          <text class="detail-item-label">交易金额</text>
+          <text class="detail-item-value">{{tapDetail.cost}}</text>
+        </view>
+        <view class="detail-item">
+          <text class="detail-item-label">交易地点</text>
+          <text class="detail-item-value">{{tapDetail.address}}</text>
+        </view>
+        <view class="detail-item">
+          <text class="detail-item-label">交易余额</text>
+          <text class="detail-item-value">{{tapDetail.balance}}</text>
+        </view>
+      </view>
+      <!--list-->
+    </view>
+    <!--ykt-detail-wraper-->
+    <view class="read-more" bindtap="moreDetail">
+      查看更多账单明细\n
+    </view>
+  </view>
+</view>
+<view class='nomore' wx:if='{{!binding}}'>
+    <image src='../images/nomore.png'></image>
+    <text>\n暂无绑定数据\n首页未有展示</text>
+ </view> 

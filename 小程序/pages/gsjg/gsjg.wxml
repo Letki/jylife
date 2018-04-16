@@ -1,0 +1,23 @@
+<view class='blueback'>
+  <view class="top-label">
+    <view class="report-the-loss">
+      <view class="report-1">当前绑定的校园卡账号：</view>
+      <view class="report-2">{{user.CardId}}</view>
+      <view class="report-3">当前状态：</view>
+      <view class="report-4" style='color:{{status? "#3ded4e":""}}'>{{user.CardStatus}}</view>
+    </view>
+  </view>
+  <view class="'input-group {{passwd_focus ? 'active' : ''}}" wx:if="{{status}}">
+    <text class="input-label">密码</text>
+    <input class='input-input' password="true" name="password" cursor-spacing="30" id="passwd" placeholder=" 请输入一卡通密码" bindinput="passwdInput" bindfocus="inputFocus" bindblur="inputBlur" />
+  </view>
+  <view class="tip">
+    <image src="/pages/images/tip.png" class="tip-image"></image>
+    <view class="tip-1">挂失后将立即无法使用该校园卡</view>
+    <view class="tip-2"> 请留意本平台是否有同学拾获您的校园卡</view>
+    <view class="tip-2 tip-3">由于解挂服务尚未开放，请需要解挂的同学移步到圈存机处进行解挂</view>
+  </view>
+  <view class="confirm-btn" bindtap="{{status? 'reportLoss':'backToIndex'}}">
+    <text>{{status? "确认挂失":"返回"}}</text>
+  </view>
+</view>

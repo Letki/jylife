@@ -1,0 +1,25 @@
+<view class='blueback'>
+  <view class="top-label">#拾金不昧是中华民族的传统美德#</view>
+  <view class="backing"></view>
+  <view class="little-hero">
+    <image src="/pages/images/little-hero-1.png" class="hero-1"></image>
+    <image src="/pages/images/little-hero-2.png" class="hero-2"></image>
+    <image src="/pages/images/little-hero-3.png" class="hero-3"></image>
+    <image src="/pages/images/little-hero-4.png" class="hero-4"></image>
+    <image src="/pages/images/little-hero-5.png" class="hero-5"></image>
+  </view>
+  <view class="announce">
+    <view class="card-owner">卡主人  </view>
+    <input type="text" class="card-owner-text" name="cardOwner" placeholder="请输入校园卡上的姓名 看不清填无" />
+    <view class="student-number">学号</view>
+       <input type="text" class="student-number-text" name="studentNumber" placeholder="请输入校园卡上的学号" />
+    <view class="department">院系</view>
+       <input type="text" class="department-text" name="department" placeholder="院系信息" />
+    <view class="remark">备注</view>
+    <textarea class="remark-text" placeholder='eg:贴有卡纸...balabalabala'></textarea>
+    <view class="type">类型</view>
+    <view class="type-pick">我捡到卡，我要发扬拾金不昧精神</view>
+    <view class="type-lose">我丢卡了，希望它能回家</view>
+  </view> 
+  <button class="button">提交</button>
+</view>

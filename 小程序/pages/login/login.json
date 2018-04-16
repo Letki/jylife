@@ -1,0 +1,6 @@
+{
+    "backgroundColor": "#fff",
+    "navigationBarTitleText": "绑定",
+    "enablePullDownRefresh": false,
+    "disableScroll": true
+}

@@ -1,0 +1,29 @@
+<view class='blueback'>
+  <view class="top-label"></view>
+  <view class="personal-details">
+        <image src="{{wx.wx.avatarUrl}}" class="headPortrait"></image>
+        <view class="name">{{wx.wx.nickName}}</view>
+        <view class="tip-binding" bindtap='tobinding' wx:if="{{binding}}">您的账号还未绑定，前往绑定></view>
+        <view class="userDetail" wx:else>
+          <view class="studentId"><text>学号\n</text>{{user.CardId}}</view>
+          <view class="username classroom"><text>姓名\n</text>{{user.CardUserName}}</view>
+          <view class="classroom"><text>班级\n</text>{{user.classroom}}</view>
+        </view>
+  </view> 
+<view class="feedback">
+  <image src="/pages/images/feedback.png" class="image-feedback"></image>
+  <view class="feedback-text">反馈</view>
+  <view class="text">></view>
+</view>
+
+<view class="about-us">
+  <image src="/pages/images/aboutUs.png" class="image-about-us"></image>
+  <view class="about-us-text">关于我们</view>
+  <view class="text">></view>
+</view>
+<!--切换绑定-->
+<view class="changeBinding" wx:if="{{!binding}}">
+<button type="warn" loading="{{loading}}" disabled="{{disabled}}" bindtap="toChangeBinding"> 切换绑定 </button>
+</view>
+</view>
+

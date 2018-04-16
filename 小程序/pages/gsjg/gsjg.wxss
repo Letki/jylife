@@ -1,0 +1,106 @@
+page{
+    background: #f1f1f1;
+}
+.top-label{
+  height:300rpx;
+  background-color:#69ABE8;
+}
+.report-1{
+  color:#fff;
+  position: relative;
+  top:25rpx;
+  left:75rpx;
+  font-size:32rpx;
+}
+.report-2{
+  color:#ffcb63;
+  position: relative;
+  top:45rpx;
+  left:265rpx;
+  font-weight:bold;
+  font-size: 38rpx;
+}
+.report-3{
+  color:#fff;
+  position: relative;
+  left:75rpx;
+  top:75rpx;
+  font-size: 32rpx;
+}
+.report-4{
+  color:#d34242;
+  position: relative;
+  left:300rpx;
+  top:80rpx;
+  font-size:38rpx;
+  font-weight: bold;
+}
+.tip{
+  width:75%;
+  font-size: 24rpx;
+  margin:20rpx auto;
+  color: #888;
+}
+.tip-1{
+  display:inline-block;
+}
+.tip-2{
+  margin-left:30rpx;
+}
+.tip-3{
+  font-weight: 600;
+}
+.tip-image{
+  width:30rpx;
+  height:30rpx;
+  vertical-align: middle;
+}
+.button{
+  background-color: #69ABE8;
+  color:#FFF;
+  border-radius:50rpx;
+  position: absolute;
+  top:820rpx;
+  width:95%;
+  height:90rpx;
+  left:20rpx;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  padding: 25rpx 10rpx;
+  margin: 40rpx 3%;
+  background: #fff;
+  border-radius: 5px;
+  border: 2px solid #f4f4f4;
+  transition: all .25s ease-in-out;
+}
+.input-group.active {
+  border: 2px solid #7acfa6;
+}
+.input-label {
+  color: #888;
+  font-size: 13pt;
+  height: 25rpx;
+  line-height: 25rpx;
+  padding: 0 25rpx;
+  border-right: 1px solid #d8d8d8; 
+}
+.input-input{
+  padding-left: 20rpx;
+}
+.confirm-btn {
+  font-size: 13pt;
+  line-height: 85rpx;
+  height: 85rpx;
+  background: #69ABE8;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin: 50rpx 3%;
+  position:relative;
+  top:100rpx;
+}
+.confirm-btn:active {
+  opacity: .8;
+}

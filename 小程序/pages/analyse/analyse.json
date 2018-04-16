@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "账单分析",
+    "backgroundColor": "#e3e3e3",
+    "onReachBottomDistance": "50",
+    "enablePullDownRefresh":false
+}

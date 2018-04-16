@@ -1,0 +1,16 @@
+page{
+  background-color: #e3e3e3;
+}
+.time{
+  margin: 5px 0 0 10px;
+  float: left;
+  font-size: 32rpx;
+  color: #777;
+  font-weight: 600;
+}
+.top image{
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin: 6px 10px 0 0;
+}

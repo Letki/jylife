@@ -1,0 +1,21 @@
+ <view class="container">
+ <view class='logo'>
+  <image src="/pages/images/text-logo.png"></image>
+ </view>
+ <view class='circle'></view>
+  <view class='bingdin'>
+          <form class="login-form">
+            <view class="input-group {{userid_focus ? 'active' : ''}}">
+              <text class="input-label">帐号</text>
+              <input  class='input-input' type="text" name="username" cursor-spacing="30" id="userid" maxlength="9" placeholder=" 请输入学号" bindinput="useridInput" bindfocus="inputFocus" bindblur="inputBlur" />
+            </view>
+            <view class="'input-group {{passwd_focus ? 'active' : ''}}">
+              <text class="input-label">密码</text>
+              <input class='input-input' password="true" name="password" cursor-spacing="30" id="passwd" placeholder=" 请输入一卡通密码" bindinput="passwdInput" bindfocus="inputFocus" bindblur="inputBlur"/>
+            </view>
+          </form>
+          <view class="confirm-btn" bindtap="bind">
+              <text>确认绑定</text>
+          </view>
+  </view>
+</view>
